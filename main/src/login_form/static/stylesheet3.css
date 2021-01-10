@@ -1,0 +1,88 @@
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+.main{
+    display: grid;
+    grid-template-columns: 12% 88%;
+}
+.title{
+    text-align: center;
+    color: rgb(23, 14, 98);
+    text-transform: uppercase;
+    font-size: 2.4rem;
+}
+.comment-name{
+    width: 40%;
+    margin-right: 3%;
+    font-family: 'Raleway', sans-serif;
+    transition: all 0.5s ease ;
+}
+.comment-email{
+    width: 40%;
+    font-family: 'Raleway', sans-serif;
+    transition: all 0.5s ease ;
+}
+.comment{
+    margin-top: 30px;
+    font-family: 'Raleway', sans-serif;
+    width:100%;
+    transition: all 0.5s ease ;
+}
+
+.comment:focus{
+    border: 2px solid rgb(28, 9, 199);
+}
+.comment-email:focus{
+    border: 2px solid rgb(28, 9, 199);
+}
+.comment-name:focus{
+    border: 2px solid rgb(28, 9, 199);
+}
+.button{
+    border: 0px solid white;
+    margin: 20px 45%;
+    height: 3rem;
+    width: 10rem;
+    background-color: rgb(23, 14, 98);
+    border-radius: 5px;
+    color:white;
+}
+
+
+#mySidenav a {
+    position: absolute;
+    left: -90px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+  }
+  
+#mySidenav a:hover {
+
+left: 0;
+}
+
+#about {
+top: 20px;
+background-color: rgb(23, 14, 98);
+
+}
+
+#blog {
+top: 80px;
+background-color: rgb(0, 122, 236);
+}
+
+#projects {
+top: 140px;
+background-color: rgb(23, 14, 98);
+}
+
+#contact {
+top: 200px;
+    background-color: rgb(0, 122, 236);

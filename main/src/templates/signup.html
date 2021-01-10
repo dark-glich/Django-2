@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <title>Blog-Post</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'stylesheet.css' %}">
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.png'%}" />
+
+    </head>
+    <body style="background: url({% static 'back.gif' %}); background-repeat: no-repeat; background-size: 3000px 600px;">
+        <div class='main'>
+            <div></div>
+            <div class="form" style="margin:5% 0px;">
+                <form method="POST"> {%csrf_token%}
+                    <h1 style="height:20px;">Sign Up</h1>
+                    <small style="color:#a1a1a1;">Please fill in the form to create a account</small>
+                    <p style="margin-top: 30px;">{{ form.first_name}}</p>
+                    <p>{{ form.last_name}}</p>
+                    <p>{{ form.email}}</p>
+                    <p>{{ form.password}}</p>
+                    {% if created == False %}
+                    <small style="font-size: x-small; color:rgb(23, 14, 98);">Account already exist with <b>{{email}}</b></small>
+                    {%endif%}
+                    <p style="font-size: 0.8rem;">Accept Terms & Conditions {{ form.terms_condition}}</p>
+                    <input type='submit' value='Sign Up' class="button" />
+                    <br><br>
+                    <div style="text-align: center;"><a class="login" href="{% url 'signin' %}">Already have an account.</a></div>
+                </form>
+            </div>
+           
+            <div></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+body{
+    background-color:white;
+    font-family: 'Raleway', sans-serif;
+}
+.intro{
+    height: 30px;
+    background-color: rgb(23, 14, 98);
+    transform:scaleX(1.05) translateY(-8px);
+    text-align: center;
+    padding-top: 10px;
+    color: snow;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin-bottom: 30px;
+}
+.data{
+    color:rgb(23, 14, 98);
+    display: grid;
+    grid-template-columns: 70% 30% ;
+    border:1px solid rgb(23, 14, 98);
+    padding:5px;
+    border-radius:10px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+.data:hover{
+    background-color:#F2F2F2;
+}
+
+
+
+a:link{
+    text-decoration: none;    
+}
